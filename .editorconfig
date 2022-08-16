@@ -1,38 +1,18 @@
-node_modules
-package-lock.json
-version.json
-componetns
-sendmail
+# https://editorconfig.org
+root = true
 
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
 
-### OSX ###
-# General
-*pyc
-.DS_Store
-Desktop.ini
-.AppleDouble
-.LSOverride
+[*.md]
+max_line_length = 0
+trim_trailing_whitespace = false
 
-# Icon must end with two \r
-Icon
-
-
-# Thumbnails
-._*
-Thumbs.db
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+[COMMIT_EDITMSG]
+max_line_length = 0
