@@ -579,10 +579,6 @@ li {
   color: #e1bdaf;
 }
 
-.page__hero-section {
-  margin-top: -5rem;
-}
-
 .no-webp .hero-section{
   background: url("../img/pictures/home-page/hero-section/bg.png") #000 center center/cover no-repeat; }
 
@@ -595,6 +591,7 @@ li {
           align-items: center;
   width: 100%;
   height: 100vh;
+  margin-top: -5rem;
 }
 
 .hero-section__content {
@@ -650,6 +647,7 @@ li {
 
 .hero-section__btn {
   background-color: #e1bdaf;
+  border: 0.125rem solid #e1bdaf;
   color: #fff;
   font-size: 1.125rem;
   padding: 0.8125rem 2.0625rem;

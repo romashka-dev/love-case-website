@@ -1,7 +1,4 @@
 //====================================================================================================
-.page__hero-section {
-  margin-top: rem(-80);
-}
 .hero-section {
   background: url("@img/pictures/home-page/hero-section/bg.png") $mainColor
     center center/cover no-repeat;
@@ -9,6 +6,7 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  margin-top: rem(-80);
 
   &__content {
     display: flex;
@@ -37,6 +35,7 @@
 
   &__btn {
     background-color: $additionalColor_2;
+    border: rem(2) solid $additionalColor_2;
     color: $mainColor__W;
     font-size: rem(18);
     padding: rem(13) rem(33);
