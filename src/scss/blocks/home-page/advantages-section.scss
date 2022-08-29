@@ -1,0 +1,139 @@
+//====================================================================================================
+.advantages {
+  &__container {
+    padding-top: rem(150);
+    padding-bottom: rem(75);
+    text-align: center;
+    @include adaptiveValue("padding-top", 150, 80);
+    @include adaptiveValue("padding-bottom", 75, 40);
+  }
+
+  &__text-content {
+    max-width: rem(840);
+    margin: 0 auto;
+    margin-bottom: rem(50);
+    @include adaptiveValue("margin-bottom", 50, 30);
+
+    @media (max-width: $pc) {
+      max-width: rem(720);
+    }
+  }
+
+  &__subtitle-h2 {
+    font-family: "Great Vibes";
+    color: $mainColor;
+    font-size: rem(70);
+    font-family: 400;
+    line-height: rem(88);
+    margin-bottom: rem(34);
+    position: relative;
+    @include adaptiveValue("font-size", 70, 40);
+    @include adaptiveValue("line-height", 88, 44);
+    @include adaptiveValue("margin-bottom", 34, 12);
+  }
+
+  &__title::before {
+    display: inline-block;
+    background-color: $additionalColor_2;
+    width: rem(150);
+    height: rem(2);
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: "";
+  }
+
+  &__images-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: rem(30);
+    margin-bottom: rem(50);
+    @include adaptiveValue("gap", 30, 10);
+    @include adaptiveValue("margin-bottom", 50, 30);
+
+    @media (max-width: $pc) {
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+      margin-bottom: rem(50);
+      @include adaptiveValue("margin-bottom", 50, 30);
+    }
+
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__items {
+    position: relative;
+
+    @media (max-width: $mobileSmall) {
+      max-height: rem(263);
+    }
+  }
+
+  &__items > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width: $mobileSmall) {
+      min-height: rem(263);
+    }
+  }
+
+  .item-special {
+    grid-row-start: span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    @media (max-width: $mobileSmall) {
+      grid-row-start: span 1;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+  }
+
+  &__description {
+    color: $mainColor__W;
+    width: rem(225);
+    margin-bottom: rem(34);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @include adaptiveValue("margin-bottom", 34, 14);
+  }
+
+  &__subtitle-h3 {
+    font-family: "Great Vibes";
+    font-size: rem(36);
+    line-height: rem(45);
+    margin-bottom: rem(13);
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $additionalColor_2;
+    border: rem(2) solid $additionalColor_2;
+    color: $mainColor__W;
+    font-size: rem(18);
+    max-width: 121px;
+    margin: 0 auto;
+    padding: rem(13) rem(26);
+    transition: all 0.3s;
+  }
+
+  &__btn:hover {
+    background-color: transparent;
+    border: rem(2) solid $additionalColor_2;
+    color: $mainColor;
+    opacity: 1;
+  }
+}
+//====================================================================================================
