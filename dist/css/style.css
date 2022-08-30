@@ -895,7 +895,7 @@ li {
   .advantages__images-content {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
+    grid-auto-rows: 263px;
     margin-bottom: 3.125rem;
   }
 
@@ -1196,14 +1196,6 @@ li {
   .advantages__images-content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-  }
-
-  .advantages__items {
-    max-height: 16.4375rem;
-  }
-
-  .advantages__items > img {
-    min-height: 16.4375rem;
   }
 
   .advantages .item-special {
