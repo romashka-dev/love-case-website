@@ -1207,15 +1207,14 @@ li {
   }
 
   .advantages .item-special {
-    grid-row-start: span 1;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    -ms-grid-column-span: 0;
-    grid-column-end: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
     -ms-grid-row: 1;
         grid-row-start: 1;
-    -ms-grid-row-span: 0;
-    grid-row-end: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
   }
 }
 
