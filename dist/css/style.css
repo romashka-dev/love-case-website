@@ -579,10 +579,8 @@ li {
   color: #e1bdaf;
 }
 
-.no-webp .hero-section{
-  background: url("../img/pictures/home-page/hero-section/bg.png") #000 center center/cover no-repeat; }
-
 .hero-section {
+  background: url("../img/pictures/home-page/hero-section/bg.png") #000 center center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -833,6 +831,10 @@ li {
       grid-row-start: 1;
   -ms-grid-row-span: 2;
   grid-row-end: 3;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .advantages__description {
@@ -895,7 +897,7 @@ li {
   .advantages__images-content {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 263px;
+    grid-auto-rows: 16.4375rem;
     margin-bottom: 3.125rem;
   }
 
@@ -1209,5 +1211,3 @@ li {
     grid-row-end: 2;
   }
 }
-
-.webp .hero-section{ background: url(../img/pictures/home-page/hero-section/bg.webp) #000 center center/cover no-repeat; }

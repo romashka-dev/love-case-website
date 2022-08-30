@@ -55,7 +55,7 @@
 
     @media (max-width: $pc) {
       grid-template-columns: 1fr 1fr;
-      grid-auto-rows: 263px;
+      grid-auto-rows: rem(263);
       margin-bottom: rem(50);
       @include adaptiveValue("margin-bottom", 50, 30);
     }
@@ -81,6 +81,9 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
     @media (max-width: $mobileSmall) {
       grid-column-start: 1;
